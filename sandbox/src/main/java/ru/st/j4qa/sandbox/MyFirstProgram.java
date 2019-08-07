@@ -5,14 +5,13 @@ public class MyFirstProgram {
     public static void main(String[] args) {
         hello("world");
         hello("user");
-        hello("Feofan");
+        hello("teltevsky");
 
-    double l = 5;
-    System.out.println("Площадь квадрата со стороной " + l + " равна " + area(l));
+    Square s = new Square(5);
+    System.out.println("Площадь квадрата со стороной " + s.l + " равна " + s.area());
 
-    double a = 4;
-    double b = 6;
-    System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b +  " равна " + area(a, b));
+    Rectangle r = new Rectangle(4, 6);
+    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b +  " равна " + r.area());
 
     }
 
@@ -20,12 +19,10 @@ public class MyFirstProgram {
         System.out.println("Hello, " + somebody + "!");
     }
 
-    public static double area(double len)   {
-        return len * len;
-    }
 
-    public static double area(double a, double b)   {
-        return a * b;
-    }
+
+//    public static double distance(Point p1, Point p2) {
+//        return Math.sqrt((p2.x - p1.x) * (p2.x - p1.x) + (p2.y - p1.y) * (p2.y - p1.y));
+//    }
 }
 
