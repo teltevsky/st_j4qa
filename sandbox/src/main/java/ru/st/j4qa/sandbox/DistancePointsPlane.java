@@ -12,7 +12,7 @@ public class DistancePointsPlane {
 
 //  Не сообразил, как при переносе функции (метода) в класс Point указать разные параметры (координаты) для разных точек (объектов).
 //  Создал новый класс TwoPoints
-        TwoPoints tp = new TwoPoints(1,5,13,1);
+        TwoPoints tp = new TwoPoints(5,12,-7,15);
         System.out.println("NEW Расстояние между двумя точками, лежащими в одной плоскости, с координатами [" + tp.x1 + "; " + tp.y1 + "] и [" + tp.x2 + "; " + tp.y2 + "] равно " + tp.distance());
 
     }
